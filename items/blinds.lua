@@ -299,7 +299,7 @@ SMODS.Blind {
 
     defeat = function(self)
         resetHorsery()
-       if beatInOneHand() > 0.000001 then
+       if beatInOneHand() then
             addHorse()
        end
        G.FUNCS.overlay_menu{
